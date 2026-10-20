@@ -1,0 +1,5 @@
+# 统一换行符。仓库里有要在 Linux 云主机上跑的 .sh，必须保证它是 LF，
+# 否则 bash 会因 CRLF 报 "bad interpreter"。
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf

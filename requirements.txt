@@ -1,0 +1,17 @@
+# 版本必须钉死：训练/推理用的 ultralytics 版本不一致会导致 best.pt 加载失败
+# （本项目训练时用的是 8.4.173）
+ultralytics==8.4.173
+
+# ultralytics 会带上 torch / torchvision，但 GPU 版要按 CUDA 版本单独装，例如：
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+
+# 数据构建与质检脚本用到
+numpy
+Pillow
+PyYAML
+
+# tools/download_roboflow.py、tools/search_roboflow_apple.py、tools/harvest_apple.py 用
+requests
+
+# tools/val_apple_cls.py 画中文混淆矩阵用
+matplotlib

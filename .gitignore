@@ -1,0 +1,39 @@
+# ============ 绝不能进仓库的 ============
+# Roboflow API key —— 泄露了别人就能拿它下载/消耗你的额度
+.secrets/
+**/roboflow_key*.txt
+# 其它可能的凭据
+.env
+*.key
+*.pem
+
+# ============ 数据与产物（体积大，且多为第三方许可）============
+datasets/
+runs/
+models/
+demo_pics/
+.tmp/
+.ultralytics/
+
+# ============ 权重与压缩包（用 Releases 或独立模型库分发）============
+*.pt
+*.onnx
+*.zip
+*.part1
+*.part2
+*.part3
+
+# ============ 环境与缓存 ============
+.venv/
+__pycache__/
+*.py[cod]
+.pip-cache/
+.mplconfig/
+.ms-cache/
+Arial.ttf
+
+# ============ 编辑器 / 系统 ============
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
